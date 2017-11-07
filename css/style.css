@@ -6,12 +6,17 @@
     padding: 0;
 }
 
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;
-    -webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    -o-background-size: 50%;
-    background-size: 50%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 body,
@@ -45,7 +50,7 @@ body,
 }
 
 .slide1 {
-    background-image: url("../images/player.png");
+    /*background-image: url("../images/player.png");*/
 }
 
 /*.slide2 {*/
@@ -57,7 +62,7 @@ body,
 .slide-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
 }
@@ -159,6 +164,7 @@ body,
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    letter-spacing: 2px;
     padding-bottom: 10px;
 }
 
@@ -194,6 +200,7 @@ body,
     font-size: 14px;
     text-transform: uppercase;
     padding-bottom: 10px;
+    letter-spacing: 4px;
 }
 
 .bottom_nav a:hover {
@@ -204,31 +211,34 @@ body,
     position: relative;
 }
 .bottom_nav li::after {
-    content: '*';
+    content: '\f005';
+    font-family:FontAwesome;
     position: absolute;
     top:-20px;
-    font-size: 35px;
+    font-size: 16px;
     left:42%;
     width:40px;
     height:40px;
     color:#f8981d;
 }
 .bottom_nav li:nth-child(1)::after {
-    content: '*';
+    content: '\f005';
+    font-family:FontAwesome;
     position: absolute;
     top:-20px;
-    font-size: 35px;
-    left:35%;
+    font-size: 16px;
+    left:25%;
     width:40px;
     height:40px;
     color:#f8981d;
 }
 .bottom_nav li:nth-child(2)::after {
-    content: '*';
+    content: '\f005';
+    font-family: FontAwesome;
     position: absolute;
     top:-20px;
-    font-size: 35px;
-    left:35%;
+    font-size: 16px;
+    left:30%;
     width:40px;
     height:40px;
     color:#f8981d;
@@ -255,129 +265,129 @@ body,
    ================================= */
 
 @media only screen and (max-width: 575px) {
-    body {
-        background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;
-        -webkit-background-size: 95%;
-        -moz-background-size: 95%;
-        -o-background-size: 95%;
-        background-size: 95%;
-    }
+    /*body {*/
+        /*background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;*/
+        /*-webkit-background-size: 95%;*/
+        /*-moz-background-size: 95%;*/
+        /*-o-background-size: 95%;*/
+        /*background-size: 95%;*/
+    /*}*/
 
-    .wrap {
-        background: url(../images/star.png) no-repeat center center fixed;
-        -webkit-background-size: 95%;
-        -moz-background-size: 95%;
-        -o-background-size: 95%;
-        background-size: 95%;
-    }
+    /*.wrap {*/
+        /*background: url(../images/star.png) no-repeat center center fixed;*/
+        /*-webkit-background-size: 95%;*/
+        /*-moz-background-size: 95%;*/
+        /*-o-background-size: 95%;*/
+        /*background-size: 95%;*/
+    /*}*/
 
-    .slide {
-        background-size: 82%;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-    }
+    /*.slide {*/
+        /*background-size: 82%;*/
+        /*background-position: center bottom;*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
 
-    .bottom_nav_area {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-    }
+    /*.bottom_nav_area {*/
+        /*position: absolute;*/
+        /*bottom: 5%;*/
+        /*left: 5%;*/
+    /*}*/
 }
 
 
 
 @media only screen and (max-width: 767px) {
-    body {
-        background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;
-        -webkit-background-size: 95%;
-        -moz-background-size: 95%;
-        -o-background-size: 95%;
-        background-size: 95%;
-    }
+    /*body {*/
+        /*background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;*/
+        /*-webkit-background-size: 95%;*/
+        /*-moz-background-size: 95%;*/
+        /*-o-background-size: 95%;*/
+        /*background-size: 95%;*/
+    /*}*/
 
-    .wrap {
-        background: url(../images/star.png) no-repeat center center fixed;
-        -webkit-background-size: 95%;
-        -moz-background-size: 95%;
-        -o-background-size: 95%;
-        background-size: 95%;
-    }
+    /*.wrap {*/
+        /*background: url(../images/star.png) no-repeat center center fixed;*/
+        /*-webkit-background-size: 95%;*/
+        /*-moz-background-size: 95%;*/
+        /*-o-background-size: 95%;*/
+        /*background-size: 95%;*/
+    /*}*/
 
-    .slide {
-        background-size: 82%;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-    }
+    /*.slide {*/
+        /*background-size: 82%;*/
+        /*background-position: center bottom;*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
 
-    .bottom_nav_area {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-    }
+    /*.bottom_nav_area {*/
+        /*position: absolute;*/
+        /*bottom: 5%;*/
+        /*left: 5%;*/
+    /*}*/
 
 }
 
 @media only screen and (max-width: 991px) {
 
-    body {
-        background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;
-        -webkit-background-size: 90%;
-        -moz-background-size: 90%;
-        -o-background-size: 90%;
-        background-size: 90%;
-    }
+    /*body {*/
+        /*background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;*/
+        /*-webkit-background-size: 90%;*/
+        /*-moz-background-size: 90%;*/
+        /*-o-background-size: 90%;*/
+        /*background-size: 90%;*/
+    /*}*/
 
-    .wrap {
-        background: url(../images/star.png) no-repeat center center fixed;
-        -webkit-background-size: 80%;
-        -moz-background-size: 80%;
-        -o-background-size: 80%;
-        background-size: 80%;
-    }
+    /*.wrap {*/
+        /*background: url(../images/star.png) no-repeat center center fixed;*/
+        /*-webkit-background-size: 80%;*/
+        /*-moz-background-size: 80%;*/
+        /*-o-background-size: 80%;*/
+        /*background-size: 80%;*/
+    /*}*/
 
-    .slide {
-        background-size: 85%;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-    }
+    /*.slide {*/
+        /*background-size: 85%;*/
+        /*background-position: center bottom;*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
 
-    .bottom_nav_area {
-        position: absolute;
-        bottom: 5%;
-        left: 10%;
-    }
+    /*.bottom_nav_area {*/
+        /*position: absolute;*/
+        /*bottom: 5%;*/
+        /*left: 10%;*/
+    /*}*/
 
 }
 
 @media only screen and (max-width: 1199px) {
 
-    body {
-        background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;
-        -webkit-background-size: 90%;
-        -moz-background-size: 90%;
-        -o-background-size: 90%;
-        background-size: 90%;
-    }
+    /*body {*/
+        /*background: url(../images/bg_circle_up.png) no-repeat center center fixed #161924;*/
+        /*-webkit-background-size: 90%;*/
+        /*-moz-background-size: 90%;*/
+        /*-o-background-size: 90%;*/
+        /*background-size: 90%;*/
+    /*}*/
 
-    .wrap {
-        background: url(../images/star.png) no-repeat center center fixed;
-        -webkit-background-size: 80%;
-        -moz-background-size: 80%;
-        -o-background-size: 80%;
-        background-size: 80%;
-    }
+    /*.wrap {*/
+        /*background: url(../images/star.png) no-repeat center center fixed;*/
+        /*-webkit-background-size: 80%;*/
+        /*-moz-background-size: 80%;*/
+        /*-o-background-size: 80%;*/
+        /*background-size: 80%;*/
+    /*}*/
 
-    .slide {
-        background-size: 92%;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-    }
+    /*.slide {*/
+        /*background-size: 92%;*/
+        /*background-position: center bottom;*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
 
-    .bottom_nav_area {
-        position: absolute;
-        bottom: 5%;
-        left: 10%;
-    }
+    /*.bottom_nav_area {*/
+        /*position: absolute;*/
+        /*bottom: 5%;*/
+        /*left: 10%;*/
+    /*}*/
 
 }
 
