@@ -7,69 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Council | CoDesign</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<header class="cd-auto-hide-header">
+    <div class="logo">
+        <a href="#0"><img src="images/logo.svg" alt="Logo"></a>
+    </div>
+    <nav class="cd-primary-nav">
+        <a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				<i class="fa fa-bars fa-lg"></i>
+			</span>
+        </a> <!-- .nav-trigger -->
+
+        <ul id="cd-navigation">
+            <li><a href="#0">The Council</a></li>
+            <li><a href="#0">Our Squad</a></li>
+            <li><a href="#0">achivements</a></li>
+            <li><a href="#0">partners</a></li>
+            <li><a href="#0">contact</a></li>
+        </ul>
+    </nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
 <div class="wrap">
 
-    <div class="top_navarea">
-        <div class="portion1">
-            <a href="">
-                <img src="images/logo.svg" alt="">
-            </a>
-        </div>
-        <div class="portion2">
-            <div class="top_nav">
-                <nav>
-                    <ul>
-                        <li><a href="">The Council</a></li>
-                        <li><a href="">Our Squad</a></li>
-                        <li><a href="">Achievements</a></li>
-                        <li><a href="">Partners</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-
-
-    <!--center player image-->
+    <!--Center player image-->
     <div id="arrow-left" class="arrow"><span>&#8853</span>read his bio</div>
     <div id="slider">
         <div class="slide slide1">
             <div class="slide-content">
-                <span><img class="img-fluid" src="images/player.png" alt=""></span>
+                <img class="img-fluid" src="images/player.png" alt="">
             </div>
         </div>
     </div>
 
-    <div id="arrow-right" class="arrow"><h1>J1N</h1>
+    <div id="arrow-right" class="arrow arrowHide"><h1>J1N</h1>
         <span>zunnun crorie</span></div>
 
     <!--Bottom Nav-->
     <div class="bottom_nav_area">
-    <div class="bottom_nav">
-        <nav>
-            <ul>
-                <li class="active">
-                    <a href="">J1N</a>
-                </li>
-                <li class="active"><a href="">L3N</a></li>
-                <li class="active"><a href="">ANIMAL</a></li>
-                <li class="active"><a href="">D3ATHS</a></li>
-                <li class="active"><a href="">LOST RIDER</a></li>
-            </ul>
-        </nav>
+        <div class="bottom_nav">
+            <nav>
+                <ul>
+                    <li class="active">
+                        <a href="">J1N</a>
+                    </li>
+                    <li class="active"><a href="">L3N</a></li>
+                    <li class="active"><a href="">ANIMAL</a></li>
+                    <li class="active"><a href="">D3ATHS</a></li>
+                    <li class="active"><a href="">LOST RIDER</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
 
-   <!--Bottom footer-->
+    <!--Bottom footer-->
     <footer class="main_footer">
-        <small>©2017 THE COUNCIL. ALL RIGHTS RESErVED | MADE BY CODESIGN</small>
+        <small>©2017 THE COUNCIL. ALL RIGHTS RESERVED | MADE BY CODESIGN</small>
     </footer>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
